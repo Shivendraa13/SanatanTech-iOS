@@ -1,0 +1,645 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F833E7702D01F2BB00D8052A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F833E76F2D01F2BB00D8052A /* AppDelegate.swift */; };
+		F833E7722D01F2BB00D8052A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F833E7712D01F2BB00D8052A /* SceneDelegate.swift */; };
+		F833E7742D01F2BB00D8052A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F833E7732D01F2BB00D8052A /* ViewController.swift */; };
+		F833E7772D01F2BB00D8052A /* Base in Resources */ = {isa = PBXBuildFile; fileRef = F833E7762D01F2BB00D8052A /* Base */; };
+		F833E77A2D01F2BB00D8052A /* SanatanTech_App.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F833E7782D01F2BB00D8052A /* SanatanTech_App.xcdatamodeld */; };
+		F833E77C2D01F2BC00D8052A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F833E77B2D01F2BC00D8052A /* Assets.xcassets */; };
+		F833E77F2D01F2BC00D8052A /* Base in Resources */ = {isa = PBXBuildFile; fileRef = F833E77E2D01F2BC00D8052A /* Base */; };
+		F833E78A2D01F2BC00D8052A /* SanatanTech_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F833E7892D01F2BC00D8052A /* SanatanTech_AppTests.swift */; };
+		F833E7942D01F2BC00D8052A /* SanatanTech_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F833E7932D01F2BC00D8052A /* SanatanTech_AppUITests.swift */; };
+		F833E7962D01F2BC00D8052A /* SanatanTech_AppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F833E7952D01F2BC00D8052A /* SanatanTech_AppUITestsLaunchTests.swift */; };
+		F833E7AF2D01F97300D8052A /* TableViewData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F833E7AE2D01F97300D8052A /* TableViewData.swift */; };
+		F833E7B22D01FD6700D8052A /* DataCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F833E7B12D01FD6700D8052A /* DataCell.xib */; };
+		F833E7B32D01FD6700D8052A /* DataCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F833E7B02D01FD6700D8052A /* DataCell.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F833E7862D01F2BC00D8052A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F833E7642D01F2BB00D8052A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F833E76B2D01F2BB00D8052A;
+			remoteInfo = "SanatanTech-App";
+		};
+		F833E7902D01F2BC00D8052A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F833E7642D01F2BB00D8052A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F833E76B2D01F2BB00D8052A;
+			remoteInfo = "SanatanTech-App";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F833E76C2D01F2BB00D8052A /* SanatanTech-App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SanatanTech-App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F833E76F2D01F2BB00D8052A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F833E7712D01F2BB00D8052A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		F833E7732D01F2BB00D8052A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F833E7762D01F2BB00D8052A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F833E7792D01F2BB00D8052A /* SanatanTech_App.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SanatanTech_App.xcdatamodel; sourceTree = "<group>"; };
+		F833E77B2D01F2BC00D8052A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F833E77E2D01F2BC00D8052A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F833E7802D01F2BC00D8052A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F833E7852D01F2BC00D8052A /* SanatanTech-AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SanatanTech-AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F833E7892D01F2BC00D8052A /* SanatanTech_AppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SanatanTech_AppTests.swift; sourceTree = "<group>"; };
+		F833E78F2D01F2BC00D8052A /* SanatanTech-AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SanatanTech-AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F833E7932D01F2BC00D8052A /* SanatanTech_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SanatanTech_AppUITests.swift; sourceTree = "<group>"; };
+		F833E7952D01F2BC00D8052A /* SanatanTech_AppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SanatanTech_AppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		F833E7A22D01F33400D8052A /* SanatanTech-App.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "SanatanTech-App.entitlements"; sourceTree = "<group>"; };
+		F833E7AE2D01F97300D8052A /* TableViewData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewData.swift; sourceTree = "<group>"; };
+		F833E7B02D01FD6700D8052A /* DataCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataCell.swift; sourceTree = "<group>"; };
+		F833E7B12D01FD6700D8052A /* DataCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DataCell.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F833E7692D01F2BB00D8052A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F833E7822D01F2BC00D8052A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F833E78C2D01F2BC00D8052A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F833E7632D01F2BB00D8052A = {
+			isa = PBXGroup;
+			children = (
+				F833E76E2D01F2BB00D8052A /* SanatanTech-App */,
+				F833E7882D01F2BC00D8052A /* SanatanTech-AppTests */,
+				F833E7922D01F2BC00D8052A /* SanatanTech-AppUITests */,
+				F833E76D2D01F2BB00D8052A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F833E76D2D01F2BB00D8052A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F833E76C2D01F2BB00D8052A /* SanatanTech-App.app */,
+				F833E7852D01F2BC00D8052A /* SanatanTech-AppTests.xctest */,
+				F833E78F2D01F2BC00D8052A /* SanatanTech-AppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F833E76E2D01F2BB00D8052A /* SanatanTech-App */ = {
+			isa = PBXGroup;
+			children = (
+				F833E7A22D01F33400D8052A /* SanatanTech-App.entitlements */,
+				F833E76F2D01F2BB00D8052A /* AppDelegate.swift */,
+				F833E7712D01F2BB00D8052A /* SceneDelegate.swift */,
+				F833E7732D01F2BB00D8052A /* ViewController.swift */,
+				F833E7752D01F2BB00D8052A /* Main.storyboard */,
+				F833E77B2D01F2BC00D8052A /* Assets.xcassets */,
+				F833E77D2D01F2BC00D8052A /* LaunchScreen.storyboard */,
+				F833E7802D01F2BC00D8052A /* Info.plist */,
+				F833E7782D01F2BB00D8052A /* SanatanTech_App.xcdatamodeld */,
+				F833E7AE2D01F97300D8052A /* TableViewData.swift */,
+				F833E7B02D01FD6700D8052A /* DataCell.swift */,
+				F833E7B12D01FD6700D8052A /* DataCell.xib */,
+			);
+			path = "SanatanTech-App";
+			sourceTree = "<group>";
+		};
+		F833E7882D01F2BC00D8052A /* SanatanTech-AppTests */ = {
+			isa = PBXGroup;
+			children = (
+				F833E7892D01F2BC00D8052A /* SanatanTech_AppTests.swift */,
+			);
+			path = "SanatanTech-AppTests";
+			sourceTree = "<group>";
+		};
+		F833E7922D01F2BC00D8052A /* SanatanTech-AppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F833E7932D01F2BC00D8052A /* SanatanTech_AppUITests.swift */,
+				F833E7952D01F2BC00D8052A /* SanatanTech_AppUITestsLaunchTests.swift */,
+			);
+			path = "SanatanTech-AppUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F833E76B2D01F2BB00D8052A /* SanatanTech-App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F833E7992D01F2BC00D8052A /* Build configuration list for PBXNativeTarget "SanatanTech-App" */;
+			buildPhases = (
+				F833E7682D01F2BB00D8052A /* Sources */,
+				F833E7692D01F2BB00D8052A /* Frameworks */,
+				F833E76A2D01F2BB00D8052A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SanatanTech-App";
+			productName = "SanatanTech-App";
+			productReference = F833E76C2D01F2BB00D8052A /* SanatanTech-App.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F833E7842D01F2BC00D8052A /* SanatanTech-AppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F833E79C2D01F2BC00D8052A /* Build configuration list for PBXNativeTarget "SanatanTech-AppTests" */;
+			buildPhases = (
+				F833E7812D01F2BC00D8052A /* Sources */,
+				F833E7822D01F2BC00D8052A /* Frameworks */,
+				F833E7832D01F2BC00D8052A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F833E7872D01F2BC00D8052A /* PBXTargetDependency */,
+			);
+			name = "SanatanTech-AppTests";
+			productName = "SanatanTech-AppTests";
+			productReference = F833E7852D01F2BC00D8052A /* SanatanTech-AppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F833E78E2D01F2BC00D8052A /* SanatanTech-AppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F833E79F2D01F2BC00D8052A /* Build configuration list for PBXNativeTarget "SanatanTech-AppUITests" */;
+			buildPhases = (
+				F833E78B2D01F2BC00D8052A /* Sources */,
+				F833E78C2D01F2BC00D8052A /* Frameworks */,
+				F833E78D2D01F2BC00D8052A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F833E7912D01F2BC00D8052A /* PBXTargetDependency */,
+			);
+			name = "SanatanTech-AppUITests";
+			productName = "SanatanTech-AppUITests";
+			productReference = F833E78F2D01F2BC00D8052A /* SanatanTech-AppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F833E7642D01F2BB00D8052A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					F833E76B2D01F2BB00D8052A = {
+						CreatedOnToolsVersion = 15.4;
+					};
+					F833E7842D01F2BC00D8052A = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = F833E76B2D01F2BB00D8052A;
+					};
+					F833E78E2D01F2BC00D8052A = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = F833E76B2D01F2BB00D8052A;
+					};
+				};
+			};
+			buildConfigurationList = F833E7672D01F2BB00D8052A /* Build configuration list for PBXProject "SanatanTech-App" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F833E7632D01F2BB00D8052A;
+			productRefGroup = F833E76D2D01F2BB00D8052A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F833E76B2D01F2BB00D8052A /* SanatanTech-App */,
+				F833E7842D01F2BC00D8052A /* SanatanTech-AppTests */,
+				F833E78E2D01F2BC00D8052A /* SanatanTech-AppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F833E76A2D01F2BB00D8052A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F833E77C2D01F2BC00D8052A /* Assets.xcassets in Resources */,
+				F833E77F2D01F2BC00D8052A /* Base in Resources */,
+				F833E7772D01F2BB00D8052A /* Base in Resources */,
+				F833E7B22D01FD6700D8052A /* DataCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F833E7832D01F2BC00D8052A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F833E78D2D01F2BC00D8052A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F833E7682D01F2BB00D8052A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F833E7742D01F2BB00D8052A /* ViewController.swift in Sources */,
+				F833E7B32D01FD6700D8052A /* DataCell.swift in Sources */,
+				F833E7702D01F2BB00D8052A /* AppDelegate.swift in Sources */,
+				F833E77A2D01F2BB00D8052A /* SanatanTech_App.xcdatamodeld in Sources */,
+				F833E7AF2D01F97300D8052A /* TableViewData.swift in Sources */,
+				F833E7722D01F2BB00D8052A /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F833E7812D01F2BC00D8052A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F833E78A2D01F2BC00D8052A /* SanatanTech_AppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F833E78B2D01F2BC00D8052A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F833E7942D01F2BC00D8052A /* SanatanTech_AppUITests.swift in Sources */,
+				F833E7962D01F2BC00D8052A /* SanatanTech_AppUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F833E7872D01F2BC00D8052A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F833E76B2D01F2BB00D8052A /* SanatanTech-App */;
+			targetProxy = F833E7862D01F2BC00D8052A /* PBXContainerItemProxy */;
+		};
+		F833E7912D01F2BC00D8052A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F833E76B2D01F2BB00D8052A /* SanatanTech-App */;
+			targetProxy = F833E7902D01F2BC00D8052A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F833E7752D01F2BB00D8052A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F833E7762D01F2BB00D8052A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F833E77D2D01F2BC00D8052A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F833E77E2D01F2BC00D8052A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F833E7972D01F2BC00D8052A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F833E7982D01F2BC00D8052A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F833E79A2D01F2BC00D8052A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "SanatanTech-App/SanatanTech-App.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = X8GVMA9VD7;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "SanatanTech-App/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.SanatanTech.SanatanTech-App";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F833E79B2D01F2BC00D8052A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "SanatanTech-App/SanatanTech-App.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = X8GVMA9VD7;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "SanatanTech-App/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.SanatanTech.SanatanTech-App";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F833E79D2D01F2BC00D8052A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = X8GVMA9VD7;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.SanatanTech.SanatanTech-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SanatanTech-App.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SanatanTech-App";
+			};
+			name = Debug;
+		};
+		F833E79E2D01F2BC00D8052A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = X8GVMA9VD7;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.SanatanTech.SanatanTech-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SanatanTech-App.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SanatanTech-App";
+			};
+			name = Release;
+		};
+		F833E7A02D01F2BC00D8052A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = X8GVMA9VD7;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.SanatanTech.SanatanTech-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "SanatanTech-App";
+			};
+			name = Debug;
+		};
+		F833E7A12D01F2BC00D8052A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = X8GVMA9VD7;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.SanatanTech.SanatanTech-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "SanatanTech-App";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F833E7672D01F2BB00D8052A /* Build configuration list for PBXProject "SanatanTech-App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F833E7972D01F2BC00D8052A /* Debug */,
+				F833E7982D01F2BC00D8052A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F833E7992D01F2BC00D8052A /* Build configuration list for PBXNativeTarget "SanatanTech-App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F833E79A2D01F2BC00D8052A /* Debug */,
+				F833E79B2D01F2BC00D8052A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F833E79C2D01F2BC00D8052A /* Build configuration list for PBXNativeTarget "SanatanTech-AppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F833E79D2D01F2BC00D8052A /* Debug */,
+				F833E79E2D01F2BC00D8052A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F833E79F2D01F2BC00D8052A /* Build configuration list for PBXNativeTarget "SanatanTech-AppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F833E7A02D01F2BC00D8052A /* Debug */,
+				F833E7A12D01F2BC00D8052A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		F833E7782D01F2BB00D8052A /* SanatanTech_App.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				F833E7792D01F2BB00D8052A /* SanatanTech_App.xcdatamodel */,
+			);
+			currentVersion = F833E7792D01F2BB00D8052A /* SanatanTech_App.xcdatamodel */;
+			path = SanatanTech_App.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = F833E7642D01F2BB00D8052A /* Project object */;
+}
