@@ -34,9 +34,6 @@ class ViewController: UIViewController {
             fatalError("Unable to access AppDelegate or PersistentContainer")
         }
         
-        removeDuplicateStepCountData()
-        removeDuplicateHeartRateData()
-        
         fetchSavedData()
         requestAuthorization()
         setTableView()
@@ -187,49 +184,6 @@ class ViewController: UIViewController {
         }
     }
     
-    func removeDuplicateStepCountData() {
-        let fetchRequest: NSFetchRequest<StepCount> = StepCount.fetchRequest()
-        fetchRequest.sortDescriptors = [NSSortDescriptor(key: "date", ascending: true)]
-        
-        do {
-            let fetchedResults = try context.fetch(fetchRequest)
-            var uniqueDates: Set<Date> = []
-            for stepData in fetchedResults {
-                if uniqueDates.contains(stepData.date!) {
-                    context.delete(stepData)
-                } else {
-                    uniqueDates.insert(stepData.date!)
-                }
-            }
-            try context.save()
-            print("Duplicate step count data removed successfully")
-        } catch {
-            print("Error removing duplicate step count data: \(error.localizedDescription)")
-        }
-    }
-    
-    func removeDuplicateHeartRateData() {
-        let fetchRequest: NSFetchRequest<HeartRate> = HeartRate.fetchRequest()
-        fetchRequest.sortDescriptors = [NSSortDescriptor(key: "date", ascending: true)]
-        
-        do {
-            let fetchedResults = try context.fetch(fetchRequest)
-            var uniqueDates: Set<Date> = []
-            for heartRateData in fetchedResults {
-                if uniqueDates.contains(heartRateData.date!) {
-                    context.delete(heartRateData)
-                } else {
-                    uniqueDates.insert(heartRateData.date!)
-                }
-            }
-            try context.save()
-            print("Duplicate heart rate data removed successfully")
-        } catch {
-            print("Error removing duplicate heart rate data: \(error.localizedDescription)")
-        }
-    }
-    
-    
     func formatDate(_ date: Date?) -> String {
         guard let date = date else { return "" }
         let dateFormatter = DateFormatter()
@@ -252,12 +206,12 @@ extension ViewController : UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if tableView == heartDataTableView {
             let cell = tableView.dequeueReusableCell(withIdentifier: "DataCell", for: indexPath) as! DataCell
-            cell.heartRateLabel.text = "\(heartData[indexPath.item].heartRate ?? 0.0)"
+            cell.heartRateLabel.text = "Heart Rate: \(heartData[indexPath.item].heartRate ?? 0.0)"
             cell.dateLabel.text = "\(heartData[indexPath.item].Date ?? "")"
             return cell
         } else if tableView == stepDataTableView {
             let cell = tableView.dequeueReusableCell(withIdentifier: "DataCell", for: indexPath) as! DataCell
-            cell.heartRateLabel.text = "\(stepData[indexPath.item].stepCount ?? 0)"
+            cell.heartRateLabel.text = "Step Count; \(stepData[indexPath.item].stepCount ?? 0)"
             cell.dateLabel.text = "\(stepData[indexPath.item].Date ?? "")"
             return cell
         }

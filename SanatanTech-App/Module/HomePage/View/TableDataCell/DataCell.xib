@@ -20,10 +20,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="100"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5YC-T3-sYg">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="33.333333333333336"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h6c-39-vQQ">
-                                        <rect key="frame" x="20" y="0.0" width="280" height="33.333333333333336"/>
+                                        <rect key="frame" x="20" y="0.0" width="280" height="50"/>
                                         <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="20"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
@@ -37,29 +37,11 @@
                                     <constraint firstItem="h6c-39-vQQ" firstAttribute="top" secondItem="5YC-T3-sYg" secondAttribute="top" id="TLO-J4-7Cz"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1bU-CY-YUp">
-                                <rect key="frame" x="0.0" y="33.333333333333329" width="320" height="33.333333333333329"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T6v-ON-K6U">
-                                        <rect key="frame" x="20" y="0.0" width="280" height="33.333333333333336"/>
-                                        <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="20"/>
-                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="bottom" secondItem="T6v-ON-K6U" secondAttribute="bottom" id="W7g-i4-HVf"/>
-                                    <constraint firstItem="T6v-ON-K6U" firstAttribute="leading" secondItem="1bU-CY-YUp" secondAttribute="leading" constant="20" id="oDh-P7-5nv"/>
-                                    <constraint firstItem="T6v-ON-K6U" firstAttribute="top" secondItem="1bU-CY-YUp" secondAttribute="top" id="u4J-ey-XZc"/>
-                                    <constraint firstAttribute="trailing" secondItem="T6v-ON-K6U" secondAttribute="trailing" constant="20" id="zC7-L3-jBd"/>
-                                </constraints>
-                            </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fK2-hG-AME">
-                                <rect key="frame" x="0.0" y="66.666666666666671" width="320" height="33.333333333333329"/>
+                                <rect key="frame" x="0.0" y="50" width="320" height="50"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hrF-q2-edr">
-                                        <rect key="frame" x="20" y="0.0" width="280" height="33.333333333333336"/>
+                                        <rect key="frame" x="20" y="0.0" width="280" height="50"/>
                                         <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="20"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
@@ -89,7 +71,6 @@
             <connections>
                 <outlet property="dateLabel" destination="hrF-q2-edr" id="FmI-mq-vaY"/>
                 <outlet property="heartRateLabel" destination="h6c-39-vQQ" id="p8e-gL-2Ti"/>
-                <outlet property="stepCountLabel" destination="T6v-ON-K6U" id="xQx-BW-m8X"/>
             </connections>
             <point key="canvasLocation" x="118" y="20"/>
         </tableViewCell>

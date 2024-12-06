@@ -109,17 +109,11 @@
 			isa = PBXGroup;
 			children = (
 				F833E7A22D01F33400D8052A /* SanatanTech-App.entitlements */,
-				F833E76F2D01F2BB00D8052A /* AppDelegate.swift */,
-				F833E7712D01F2BB00D8052A /* SceneDelegate.swift */,
-				F833E7732D01F2BB00D8052A /* ViewController.swift */,
-				F833E7752D01F2BB00D8052A /* Main.storyboard */,
+				F850E8C02D02A7BF00E0F66D /* SupportingFiles */,
+				F850E8BB2D02A76900E0F66D /* Module */,
 				F833E77B2D01F2BC00D8052A /* Assets.xcassets */,
 				F833E77D2D01F2BC00D8052A /* LaunchScreen.storyboard */,
 				F833E7802D01F2BC00D8052A /* Info.plist */,
-				F833E7782D01F2BB00D8052A /* SanatanTech_App.xcdatamodeld */,
-				F833E7AE2D01F97300D8052A /* TableViewData.swift */,
-				F833E7B02D01FD6700D8052A /* DataCell.swift */,
-				F833E7B12D01FD6700D8052A /* DataCell.xib */,
 			);
 			path = "SanatanTech-App";
 			sourceTree = "<group>";
@@ -139,6 +133,60 @@
 				F833E7952D01F2BC00D8052A /* SanatanTech_AppUITestsLaunchTests.swift */,
 			);
 			path = "SanatanTech-AppUITests";
+			sourceTree = "<group>";
+		};
+		F850E8BB2D02A76900E0F66D /* Module */ = {
+			isa = PBXGroup;
+			children = (
+				F850E8BC2D02A77A00E0F66D /* HomePage */,
+			);
+			path = Module;
+			sourceTree = "<group>";
+		};
+		F850E8BC2D02A77A00E0F66D /* HomePage */ = {
+			isa = PBXGroup;
+			children = (
+				F850E8BD2D02A78000E0F66D /* View */,
+				F850E8BF2D02A7AA00E0F66D /* Model */,
+			);
+			path = HomePage;
+			sourceTree = "<group>";
+		};
+		F850E8BD2D02A78000E0F66D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F850E8BE2D02A79000E0F66D /* TableDataCell */,
+				F833E7752D01F2BB00D8052A /* Main.storyboard */,
+				F833E7732D01F2BB00D8052A /* ViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F850E8BE2D02A79000E0F66D /* TableDataCell */ = {
+			isa = PBXGroup;
+			children = (
+				F833E7B02D01FD6700D8052A /* DataCell.swift */,
+				F833E7B12D01FD6700D8052A /* DataCell.xib */,
+			);
+			path = TableDataCell;
+			sourceTree = "<group>";
+		};
+		F850E8BF2D02A7AA00E0F66D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F833E7782D01F2BB00D8052A /* SanatanTech_App.xcdatamodeld */,
+				F833E7AE2D01F97300D8052A /* TableViewData.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F850E8C02D02A7BF00E0F66D /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				F833E76F2D01F2BB00D8052A /* AppDelegate.swift */,
+				F833E7712D01F2BB00D8052A /* SceneDelegate.swift */,
+			);
+			path = SupportingFiles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

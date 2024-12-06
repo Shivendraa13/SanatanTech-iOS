@@ -2,7 +2,7 @@
 //  SanatanTech_AppTests.swift
 //  SanatanTech-AppTests
 //
-//  Created by Preyash on 05/12/24.
+//  Created by Shivendra on 05/12/24.
 //
 
 import XCTest

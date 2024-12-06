@@ -10,7 +10,6 @@ import UIKit
 class DataCell: UITableViewCell {
 
     @IBOutlet weak var heartRateLabel: UILabel!
-    @IBOutlet weak var stepCountLabel: UILabel!
     @IBOutlet weak var dateLabel: UILabel!
     
     
